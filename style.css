@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  scroll-padding-top: 100px;
+}
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
+/* NAV */
+.header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 60px 20px;
+  background-color: #e7f5ff;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.avatar {
+  height: 96px;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #74c0fc;
+}
+
+/* EDU */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.education,
+.experience,
+.projects {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.section-name {
+  font-weight: 500;
+}
+
+.uni-name {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 28px 60px 0 60px;
+}
+
+.time {
+  font-size: 22px;
+  font-weight: 200;
+  margin-left: 90px;
+}
+
+.major {
+  padding: 10px 60px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* PROJECTS */
+.project-section-name {
+  padding: 20px;
+  color: #1864ab;
+  font-weight: 600;
+}
+
+.project-container {
+  background-color: #d0ebff;
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.single-project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-name {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.project-content {
+  font-weight: 400;
+  margin-left: 24px;
+  font-size: 18px;
+}
+
+.list-item {
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.list-item:first-child {
+  margin-top: 0;
+}
+
+/* CONTACT */
+.section-contact {
+  padding: 30px;
+  background-color: #1864ab;
+}
+.contact-section-name {
+  color: #d0ebff;
+  font-weight: 600;
+}
+.contact-container {
+  margin: 24px;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.contact-info {
+  color: #fff;
+}
+
+.contact-href {
+  color: #fff;
+}
+
+/* TRAVEL */
+.section-traveling {
+  padding: 30px;
+  background-color: #4dabf7;
+}
+/* .traveling-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+} */
+.travel-section-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.travel-content {
+  color: #fff;
+  margin: 24px;
+  line-height: 1.5;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 10px;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* QUERIES */
+@media (max-width: 1000px) {
+  .header {
+    height: 32px;
+    padding: 42px 12px;
+  }
+  .avatar {
+    height: 60px;
+  }
+  .main-nav-list {
+    gap: 28px;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .uni-name {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 28px 60px 0 60px;
+  }
+  .time {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  .major {
+    padding: 10px 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 760px) {
+  .my-name {
+    display: none;
+  }
+  .main-nav-list {
+    gap: 20px;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 12px;
+  }
+  .education,
+  .experience,
+  .projects {
+    padding: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .uni-name {
+    font-size: 18px;
+    padding: 28px 40px 0 40px;
+  }
+  .major {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+  .project-container {
+    padding: 20px 60px;
+    gap: 24px;
+  }
+  .project-name {
+    font-size: 18px;
+  }
+
+  .project-content {
+    margin-left: 24px;
+    font-size: 16px;
+  }
+  .contact-container {
+    margin: 20px;
+    font-size: 16px;
+  }
+  .travel-content {
+    margin: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 620px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    height: 28px;
+    padding: 38px 6px;
+  }
+  .avatar {
+    display: none;
+  }
+  .main-nav-list {
+    gap: 12px;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .container {
+    padding: 0;
+    gap: 0;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .section-name {
+    margin-left: 12px;
+  }
+  .project-section-name {
+    margin-left: 0;
+  }
+  .time {
+    display: block;
+    margin: 0;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .major {
+    padding: 10px 40px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  .uni-name {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 28px 20px 0 40px;
+  }
+  .project-container {
+    padding: 20px 40px;
+    gap: 24px;
+  }
+  .project-name {
+    font-size: 16px;
+  }
+  .project-content {
+    margin-left: 12px;
+    font-size: 14px;
+  }
+  .contact-container {
+    margin: 12px;
+    font-size: 14px;
+  }
+  .travel-content {
+    margin: 12px;
+    font-size: 14px;
+  }
+}

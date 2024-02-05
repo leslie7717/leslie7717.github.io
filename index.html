@@ -3,9 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mingyi's Site</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Test</p>
+    <header class="header">
+      <a href="#">
+        <img class="avatar" src="img/selfie1.jpg" />
+      </a> <span class="my-name">Mingyi Gao</span>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#edu">Education & Experience</a>
+          </li>
+          <li><a class="main-nav-link" href="#projects">My Projects</a></li>
+          <li>
+            <a class="main-nav-link" href="#contact">Contact me</a>
+          </li>
+          <li><a class="main-nav-link" href="#traveling">Traveling</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-eduexp" id="edu">
+        <div class="container">
+          <div class="education">
+            <h1 class="section-name">Education</h1>
+            <h2 class="uni-name">
+              Northeastern University
+              <span class="time">Sep 2022 - May 2025</span>
+            </h2>
+            <h3 class="major">M.S. in Computer Science</h3>
+            <h3 class="major">
+              Revelant Courses: CS 5800 Algorithms, CS 5610 Web Development, CS
+              5500 Software Engineering, CS 5200 DBMS, ...
+            </h3>
+          </div>
+          <div class="experience">
+            <h1 class="section-name">Experience</h1>
+            <h2 class="uni-name">
+              Khoury College of Computer Sciences
+              <span class="time">Jan 2024 - Current</span>
+            </h2>
+
+            <h3 class="major">Teaching Assistant for CS 5008</h3>
+            <h3 class="major">
+              Conducting lab sessions and holding office hours to provide
+              individualized student support and guidance.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-projects" id="projects">
+                <h1 class="section-name project-section-name">My Projects</h1>
+                <div class="project-container">
+                    <div class="single-project">
+                        <p class="project-name">My Real Personal Blog :)</p>
+                        <ul class="project-content">
+                            <li class="list-item"><a href="https://www.mingyi-cz.com/" target="_blank">https://www.mingyi-cz.com/</a></li>
+                            <li class="list-item">Made with Next.js Notion Starter Kit.</li>
+                        </ul>
+                    </div>
+                    <div class="single-project">
+                        <p class="project-name">GPT Vault</p>
+                        <ul class="project-content">
+                            <li class="list-item"><a href="https://github.com/leslie7717/GPT-Vault" target="_blank">https://github.com/leslie7717/GPT-Vault</a></li>
+                            <li class="list-item">Developed a React-based web app serving as a ChatGPT answer vault, optimized for responsiveness on all devices.</li>
+                            <li class="list-item">Utilized Supabase for backend data handling in the app, adding a filtering feature for improved user experience.</li>
+                            <li class="list-item">Deployed the web app on a cloud-based platform (Netlify) for easy and convenient access by users.</li>
+                        </ul>
+                    </div>
+                    <div class="single-project">
+                        <p class="project-name">Discord Pokemon Bot</p>
+                        <ul class="project-content">
+                            <li class="list-item"><a href="https://github.com/leslie7717/Discord-Pokemon-Bot" target="_blank">https://github.com/leslie7717/Discord-Pokemon-Bot</a></li>
+                            <li class="list-item">Developed a Discord Pokemon Bot for battles and features to catch Pok emon and look up the Pok ́edex.</li>
+                            <li class="list-item">Programmed bot commands using Java and integrated the Discord API, implementing the Model-View-Controller
+                                (MVC) architecture to streamline functionality and maintenance.
+                                </li>
+                            <li class="list-item">Utilized MongoDB to store user and game data, reducing the response time compared to a relational database.</li>
+                            <li class="list-item">Deployed the bot on Fly.io to ensure 24/7 availability and responsiveness.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-project">
+                        <p class="project-name">Othello</p>
+                        <ul class="project-content">
+                            <li class="list-item">Designed and implemented an Othello game in Processing.py, featuring an 8x8 board with a user-friendly interface
+                                and an algorithm to validate moves for seamless gameplay.</li>
+                            <li class="list-item">Developed a computer opponent using a greedy algorithm and a score tracking feature for competitive gameplay.</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <h1 class="contact-section-name">Contact me</h1>
+        <ul class="contact-container">
+            <li class="list-item contact-info">Email: mingyigao1212@gmail.com</li>
+            <li class="list-item contact-info">LinkedIn: <a class="contact-href" href="https://www.linkedin.com/in/mingyi-gao-279153239/" target="_blank">https://www.linkedin.com/in/mingyi-gao-279153239/</a></li>
+            <li class="list-item contact-info">GitHub: <a class="contact-href" href="https://github.com/leslie7717" target="_blank">https://github.com/leslie7717</a></li>
+            <li class="list-item contact-info">My Blog: <a class="contact-href" href="https://www.mingyi-cz.com/" target="_blank">https://www.mingyi-cz.com/</a></li>
+        </ul>
+      </section>
+
+      <section class="section-traveling" id="traveling">
+
+            <h1 class="travel-section-name">Traveling</h1>
+            <p class="travel-content">I love traveling and I've been to many cities and villages in Japan, China, United States and Korea in the past year. I just wanna show some beautiful photos I took during my trips, including the first ray of sunlight in Tokyo in 2024 new year.</p>
+            <div class="gallery">
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-1.jpg"
+                  />
+                  <!-- <figcaption>Caption</figcaption> -->
+                </figure>
+      
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-2.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-3.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-4.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-5.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-6.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-7.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-8.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-9.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-10.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-11.jpg"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery-12.jpg"
+                  />
+                </figure>
+              </div>
+       </section>
+    </main>
   </body>
 </html>
